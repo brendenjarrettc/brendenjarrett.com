@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Brenden Jarrett</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="theme-enter">
+  <main class="notfound">
+    <p>ERROR 404: PAGE NOT FOUND.<br>CONNECTION TERMINATED_</p>
+    <p><a href="/" style="color:inherit">RETURN TO TERMINAL</a></p>
+  </main>
+  <script>
+    // Old Substack-style article links (/p/slug) -> /articles/slug/
+    var m = location.pathname.match(/^\/p\/([a-z0-9-]+)/);
+    if (m) location.replace('/articles/' + m[1] + '/');
+  </script>
+  <script src="/assets/js/lightbox.js" defer></script>
+</body>
+</html>
