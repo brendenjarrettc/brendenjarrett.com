@@ -733,3 +733,11 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
 .album-card a { display: flex; flex-direction: column; }
 .album-card-text { flex: 1 1 auto; } /* bars in a row stay the same height, all in colour */
 @media (max-width: 760px) { .album-card-text { justify-content: flex-start; } } /* date stays under the title */
+
+/* Article cards: each text panel takes a colour from its header image (like the release bars on Music). */
+.card a { display: flex; flex-direction: column; }
+.card-text { flex: 1 1 auto; background: var(--card-bar, transparent); }
+.card a[href="balatros-polyrhythmic-and-polychrome/"]   { --card-bar: #81292d; } /* Balatro red */
+.card a[href="going-outside-the-norm-by-scoring/"]      { --card-bar: #2f3a42; } /* INSIDE slate */
+.card a[href="how-skyrims-score-has-cast-a-cathartic/"] { --card-bar: #0f3d82; } /* Skyrim night blue */
+.card a[href] .card-text time, .card a[href] .card-text p { color: rgba(255, 255, 255, .82); }
