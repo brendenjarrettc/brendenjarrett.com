@@ -23,3 +23,12 @@
   }, { passive: true });
   update();
 })();
+
+// "Back to top" link at the end of each article (desktop): smooth scroll instead of a jump.
+document.querySelectorAll('.back-top').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    e.preventDefault();
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  });
+});

@@ -856,3 +856,12 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
 @media (prefers-reduced-motion: reduce) {
   .js .term-min .term-enter.ln { animation: tv-roll 1.6s linear infinite, blink 1.05s steps(1) infinite; }
 }
+
+/* End of each article: a "Back to top" link (desktop; phones have the floating button). */
+.back-top {
+  display: inline-flex; align-items: center; gap: .4em; margin-top: 2.5rem; padding: .5rem 1rem;
+  font-size: .85rem; font-weight: 600; color: #fff; text-decoration: none;
+  background: rgba(24, 52, 98, .62); border: 1px solid #2a3a5a; border-radius: 3px;
+}
+.back-top:hover, .back-top:focus-visible { background: #1f4fd8; border-color: #1f4fd8; outline: none; }
+@media (max-width: 760px) { .back-top { display: none; } }
