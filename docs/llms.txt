@@ -14,7 +14,8 @@
 
 ## Music
 
-- [Music](https://brendenjarrett.com/music/): all releases, with track previews.
+- [Music](https://brendenjarrett.com/music/): all releases, with track previews. A LISTEN button on every page opens a Bandcamp player, so full albums keep playing while you browse the site.
+- Wall Street Raider (W$R): original game soundtrack in production (https://www.wallstreetraider.com/).
 - [Quailentime](https://brendenjarrett.com/music/quailentime/) (album, 2026): synthesizers, piano, drum machines and guitars; loud and vivacious, then soft and ambient.
 - [Grandpa's Clothes EP](https://brendenjarrett.com/music/grandpas-clothes-ep/) (EP, 2025): acoustic instruments coupled with synthesizers.
 - [ACOLDAUS](https://brendenjarrett.com/music/acoldaus/) (album, 2024): a collection of lost, deleted and unfinished songs.
@@ -31,5 +32,12 @@
 
 ## Work with Brenden
 
-- [Contact](https://brendenjarrett.com/contact/): hire Brenden to compose the soundtrack or design the sound for a video game or film.
-- [About](https://brendenjarrett.com/about/): background, training and instruments.
+- [Contact](https://brendenjarrett.com/contact/): need sound design or an original composition for your game or media? Hire Brenden to score a video game or film.
+- [About](https://brendenjarrett.com/about/): background, training, instruments, and the favorite games, films and music that inspire Brenden.
+
+## Profiles
+
+- Games: [Backloggd](https://backloggd.com/u/threeofharts/)
+- Films: [Letterboxd](https://letterboxd.com/brendenjarrett/)
+- Music: [Musicboard](https://musicboard.app/brendenjarrett)
+- Social: [YouTube](https://www.youtube.com/@brendenjarrett), [Instagram](https://www.instagram.com/thebrendenjarrett/), [LinkedIn](https://www.linkedin.com/in/brenden-j-9213632ab/), [Bluesky](https://bsky.app/profile/jarrettcreations.com)
