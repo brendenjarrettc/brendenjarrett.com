@@ -850,3 +850,9 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
 .about-drop > summary:hover .about-arrow, .about-drop > summary:focus-visible .about-arrow { background: #1f4fd8; border-color: #1f4fd8; }
 .about-drop > summary:focus-visible { outline: none; }
 .about-drop[open] > summary { margin-bottom: .9rem; }
+/* "> ENTER" blinks like the old cursor block (holds steady while hovered or focused). */
+.js .term-min .term-enter.ln { animation: ln-on .01s steps(1) forwards, tv-roll 1.6s linear infinite, blink 1.05s steps(1) infinite; }
+.js .term-min .term-enter.ln:hover, .js .term-min .term-enter.ln:focus-visible { animation: none; opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .js .term-min .term-enter.ln { animation: tv-roll 1.6s linear infinite, blink 1.05s steps(1) infinite; }
+}
