@@ -689,7 +689,7 @@ html.lb-open, html.lb-open body { overflow: hidden; }
 .bj-listen:hover, .bj-listen:focus-visible { background: #1f4fd8; border-color: #1f4fd8; outline: none; }
 @media (max-width: 760px) {
   .bj-listen { right: 10px; bottom: calc(10px + env(safe-area-inset-bottom, 0px)); height: 36px; padding: 0 .7em; }
-  .has-listen .to-top { right: auto; left: 10px; } /* back-to-top moves to the left corner */
+  .has-listen .to-top { right: 10px; bottom: calc(54px + env(safe-area-inset-bottom, 0px)); } /* stacked above LISTEN */
 }
 
 /* The shell page: the site in a frame, the player bar underneath. */
