@@ -832,3 +832,21 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
   .js .term-min .term-mark.ln { opacity: 1; animation: tv-roll-mark 5s linear infinite; }
   .js .term-min .term-menu a.ln, .js .term-min .term-enter.ln { opacity: 1; animation: tv-roll 1.6s linear infinite; }
 }
+
+/* About, Inspired by: a drop-down. Click the bar to open the games, film and music lists. */
+.about-drop > summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: pointer; list-style: none; }
+.about-drop > summary::-webkit-details-marker { display: none; }
+.about-drop > summary h2 { margin: 0; }
+.about-arrow {
+  flex: none; width: 2rem; height: 2rem; border: 1px solid #3a3a3a; border-radius: 3px; position: relative;
+  transition: background-color .15s, border-color .15s;
+}
+.about-arrow::before {
+  content: ""; position: absolute; left: 50%; top: 45%; width: .5rem; height: .5rem;
+  border-right: 2px solid #e4e4e4; border-bottom: 2px solid #e4e4e4;
+  transform: translate(-50%, -50%) rotate(45deg); transition: transform .2s;
+}
+.about-drop[open] .about-arrow::before { top: 58%; transform: translate(-50%, -50%) rotate(-135deg); }
+.about-drop > summary:hover .about-arrow, .about-drop > summary:focus-visible .about-arrow { background: #1f4fd8; border-color: #1f4fd8; }
+.about-drop > summary:focus-visible { outline: none; }
+.about-drop[open] > summary { margin-bottom: .9rem; }
