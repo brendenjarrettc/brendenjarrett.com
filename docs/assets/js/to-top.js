@@ -16,7 +16,7 @@
   var ticking = false;
   function update() {
     ticking = false;
-    btn.classList.toggle('show', window.scrollY > window.innerHeight * 0.6);
+    btn.classList.toggle('show', window.scrollY > Math.min(window.innerHeight * 0.6, 120)); // short pages (About with its sections closed) still get it
   }
   window.addEventListener('scroll', function () {
     if (!ticking) { ticking = true; requestAnimationFrame(update); }
