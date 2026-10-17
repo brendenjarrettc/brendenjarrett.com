@@ -759,3 +759,37 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
   .term-min .term-menu { display: grid; grid-template-columns: auto auto; gap: .5em 3ch; }
   .term-min .term-menu a { justify-content: flex-start; }
 }
+
+/* Landing: the scan lines live only inside the green logo and text (not over the black screen),
+   and roll downward like an old TV picture. A brighter band also sweeps down through the logo. */
+.theme-term .crt::before { background: radial-gradient(ellipse at center, transparent 58%, rgba(0, 0, 0, .78) 100%); }
+.theme-term .crt::after { display: none; }
+.term-min {
+  --scan: repeating-linear-gradient(to bottom, #9dffb6 0 2px, #2c7a44 2px 4px);
+  text-shadow: none;
+}
+.term-min .term-mark {
+  background:
+    linear-gradient(to bottom, transparent 0 38%, rgba(225, 255, 235, .75) 50%, transparent 62% 100%) 0 0 / 100% 200% repeat-y,
+    var(--scan) 0 0 / 100% 4px;
+  animation: tv-roll-mark 5s linear infinite;
+}
+.term-min .term-menu a, .term-min .term-enter {
+  color: transparent; background: var(--scan) 0 0 / 100% 4px;
+  -webkit-background-clip: text; background-clip: text;
+  filter: drop-shadow(0 0 3px rgba(141, 245, 166, .45));
+  animation: tv-roll 1.6s linear infinite;
+}
+.term-min .term-menu a .k, .term-min .term-menu a .n { color: transparent; }
+.term-min .cursor { background: var(--phos); }
+/* Hover/focus keeps the inverse-video highlight. */
+.term-min .term-menu a:hover, .term-min .term-menu a:focus-visible,
+.term-min .term-enter:hover, .term-min .term-enter:focus-visible {
+  background: var(--phos); -webkit-background-clip: border-box; background-clip: border-box;
+  color: var(--screen); filter: none; animation: none;
+}
+.term-min .term-menu a:hover span, .term-min .term-menu a:focus-visible span { color: var(--screen); }
+.term-min .term-enter:hover .cursor, .term-min .term-enter:focus-visible .cursor { background: var(--screen); }
+@keyframes tv-roll { to { background-position: 0 32px; } }
+@keyframes tv-roll-mark { to { background-position: 0 -200%, 0 100px; } } /* -200% of an oversized layer = one full sweep downward */
+.theme-term .mosh { background: none; -webkit-backdrop-filter: blur(3px) saturate(1.6); backdrop-filter: blur(3px) saturate(1.6); } /* datamosh blocks only smear the green; plain black stays black */
