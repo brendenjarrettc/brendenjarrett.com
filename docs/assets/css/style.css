@@ -721,3 +721,15 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
   .bj-album select { max-width: none; width: 100%; }
   .bj-bandcamp { order: 3; flex-basis: 100%; }
 }
+
+/* Release cards: each title bar takes a colour from its album cover. */
+.album-card-text { background: var(--card-bar, #14243d); }
+.album-card a[href="/music/quailentime/"]                   { --card-bar: #31747e; } /* teal texture */
+.album-card a[href="/music/grandpas-clothes-ep/"]           { --card-bar: #293573; } /* blue fabric */
+.album-card a[href="/music/acoldaus/"]                      { --card-bar: #1d6ca3; } /* moonlit blue */
+.album-card a[href="/music/cleft/"]                         { --card-bar: #625146; } /* warm city-light umber */
+.album-card a[href="/music/effervescent/"]                  { --card-bar: #3d3e99; } /* violet sky */
+.album-card a[href="/music/tomorrow-is-only-a-dream-away/"] { --card-bar: #317f6e; } /* prism green */
+.album-card a { display: flex; flex-direction: column; }
+.album-card-text { flex: 1 1 auto; } /* bars in a row stay the same height, all in colour */
+@media (max-width: 760px) { .album-card-text { justify-content: flex-start; } } /* date stays under the title */
