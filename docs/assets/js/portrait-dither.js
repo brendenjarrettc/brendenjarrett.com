@@ -15,7 +15,7 @@
   var ctx = canvas.getContext('2d');
 
   // Timing (ms): hold the photo, change over, hold the pixel art, change back.
-  var HOLD_PHOTO = 4000, CHANGE = 5200, HOLD_ART = 4000;
+  var HOLD_PHOTO = 3000, CHANGE = 3000, HOLD_ART = 3000;
   var CYCLE = HOLD_PHOTO + CHANGE + HOLD_ART + CHANGE;
   var MAX_BLOCK = 22; // largest pixel size mid-change, in canvas pixels
 
