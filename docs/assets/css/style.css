@@ -616,3 +616,10 @@ html.lb-open, html.lb-open body { overflow: hidden; }
   .crt { animation: none; } /* keep the slow roll and the cursor, drop the flicker */
   .js .term .ln { opacity: 1; animation: none; }
 }
+
+/* About page, Inspired by: each heading carries a link to the list it comes from. */
+.report-src { display: block; width: fit-content; margin-top: .35em; padding: 0 .4ch; font-size: .85em; letter-spacing: .04em;
+  color: #e6e6e6; text-decoration: underline; text-underline-offset: 3px; }
+.report-src::after { content: " \2197"; }
+.report-src:hover, .report-src:focus-visible { color: #fff; background: var(--hi); text-decoration: none; outline: none; }
+.report-inspired .board-row { margin: .35em 0; }
