@@ -825,3 +825,10 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
   .about-list > div { grid-template-columns: 1fr; row-gap: .25rem; }
   .about-text p { font-size: .9rem; }
 }
+/* The boot-up switch-on (.ln) and the rolling lines share the animation property: run both. */
+.js .term-min .term-mark.ln { animation: ln-on .01s steps(1) forwards, tv-roll-mark 5s linear infinite; }
+.js .term-min .term-menu a.ln, .js .term-min .term-enter.ln { animation: ln-on .01s steps(1) forwards, tv-roll 1.6s linear infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .js .term-min .term-mark.ln { opacity: 1; animation: tv-roll-mark 5s linear infinite; }
+  .js .term-min .term-menu a.ln, .js .term-min .term-enter.ln { opacity: 1; animation: tv-roll 1.6s linear infinite; }
+}
