@@ -670,3 +670,9 @@ html.lb-open, html.lb-open body { overflow: hidden; }
     font-size: .8rem; color: #f2f2f2; background: var(--bg);
   }
 }
+
+/* Music page on phones: a shorter player (its track list scrolls inside), so the W$R banner and the
+   first album covers peek in below it and visitors can see the page keeps going. */
+@media (max-width: 760px) {
+  .reel iframe { height: clamp(300px, 44vh, 400px); }
+}
