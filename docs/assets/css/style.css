@@ -653,3 +653,20 @@ html.lb-open, html.lb-open body { overflow: hidden; }
   .to-top { width: 36px; height: 36px; border-radius: 3px; right: 10px; bottom: calc(10px + env(safe-area-inset-bottom, 0px)); }
   .to-top svg { width: 18px; height: 18px; }
 }
+
+/* Contact on phones: tighter spacing so the page, social icons and copyright fit the screen,
+   and a readable copyright on a solid backing above the background readout. */
+@media (max-width: 760px) {
+  .theme-contact .contact-page { padding-top: 4px; padding-bottom: 14px; }
+  .theme-contact .contact-title { font-size: min(9vw, 3rem); white-space: nowrap; }
+  .theme-contact .contact { gap: .55rem; margin-top: .4rem; }
+  .theme-contact .contact .portrait { width: 70%; }
+  .theme-contact .contact-form { gap: .55rem; }
+  .theme-contact .contact-form textarea { min-height: 3.2rem; }
+  .theme-contact .contact-form .form-status:empty { margin-top: -.55rem; }
+  .theme-contact .socials { margin-top: 10px; gap: 16px; }
+  .theme-contact .site-footer {
+    width: fit-content; margin: 14px 16px 16px; padding: 4px 8px;
+    font-size: .8rem; color: #f2f2f2; background: var(--bg);
+  }
+}
