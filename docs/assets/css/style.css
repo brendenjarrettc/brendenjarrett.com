@@ -676,3 +676,48 @@ html.lb-open, html.lb-open body { overflow: hidden; }
 @media (max-width: 760px) {
   .reel iframe { height: clamp(300px, 44vh, 400px); }
 }
+
+/* ---------- Site-wide music player (assets/js/player.js, /listen/) ---------- */
+/* LISTEN button on every page: bottom right. */
+.bj-listen {
+  position: fixed; z-index: 55; right: var(--gutter); bottom: 1rem;
+  display: inline-flex; align-items: center; gap: .45em; padding: .4em .8em;
+  font: 500 .72rem/1 "Poppins", system-ui, sans-serif; letter-spacing: .12em; color: #f2f2f2; cursor: pointer;
+  background: rgba(14, 14, 14, .78); border: 1px solid rgba(255, 255, 255, .3); border-radius: 3px;
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: background-color .15s, border-color .15s;
+}
+.bj-listen:hover, .bj-listen:focus-visible { background: #1f4fd8; border-color: #1f4fd8; outline: none; }
+@media (max-width: 760px) {
+  .bj-listen { right: 10px; bottom: calc(10px + env(safe-area-inset-bottom, 0px)); height: 36px; padding: 0 .7em; }
+  .has-listen .to-top { right: auto; left: 10px; } /* back-to-top moves to the left corner */
+}
+
+/* The shell page: the site in a frame, the player bar underneath. */
+html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #000; }
+.bj-shell { --bar: 56px; margin: 0; }
+.bj-site { position: fixed; left: 0; top: 0; width: 100%; height: calc(100% - var(--bar)); border: 0; display: block; background: #000; }
+.bj-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; height: var(--bar); z-index: 2;
+  display: flex; align-items: center; gap: 12px; padding: 7px var(--gutter);
+  background: #111; border-top: 1px solid #2c2c2c; color: #e4e4e4; font-family: "Poppins", system-ui, sans-serif;
+}
+.bj-album { display: flex; align-items: center; gap: 8px; flex: none; }
+.bj-label { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: #a9a9a9; }
+.bj-album select {
+  font: inherit; font-size: .8rem; color: #f2f2f2; background: #1b1b1b; border: 1px solid #3a3a3a;
+  border-radius: 3px; padding: 4px 6px; max-width: 14rem;
+}
+.bj-bandcamp { flex: 0 1 420px; min-width: 0; height: 42px; border: 0; margin-right: auto; }
+.bj-close {
+  flex: none; width: 32px; height: 32px; padding: 0; font-size: 22px; line-height: 1; cursor: pointer;
+  color: #e4e4e4; background: transparent; border: 1px solid #3a3a3a; border-radius: 3px;
+}
+.bj-close:hover, .bj-close:focus-visible { background: #1f4fd8; border-color: #1f4fd8; outline: none; }
+@media (max-width: 760px) {
+  .bj-shell { --bar: calc(92px + env(safe-area-inset-bottom, 0px)); }
+  .bj-bar { flex-wrap: wrap; align-content: center; gap: 6px 8px; padding: 6px 10px calc(6px + env(safe-area-inset-bottom, 0px)); }
+  .bj-label { display: none; }
+  .bj-album { flex: 1 1 auto; }
+  .bj-album select { max-width: none; width: 100%; }
+  .bj-bandcamp { order: 3; flex-basis: 100%; }
+}
