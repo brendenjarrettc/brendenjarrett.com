@@ -216,8 +216,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (max-width: 760px) {
   .music-page { margin: 0 16px; padding: 8px 0 40px; }
   .reel iframe { height: min(70vh, 560px); }
-  .platforms { position: static; width: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; padding: 14px 16px 6px; }
-  .platforms img { width: 32px; height: 32px; }
+  .platforms { position: static; width: auto; display: flex; justify-content: space-evenly; gap: 12px; padding: 18px 16px 10px; }
+  .platforms img { width: min(68px, 17vw); height: min(68px, 17vw); }
   .album { grid-template-columns: 1fr; }
   .album-grid { grid-template-columns: 1fr 1fr; gap: .8rem; }
   .album-card-text { flex-direction: column; gap: .15rem; }
@@ -267,7 +267,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 @media (max-width: 760px) {
   .contact-page { padding: 8px 16px 40px; }
-  .socials { position: static; display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin-top: 28px; }
+  .socials { position: static; display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin-top: 4px; }
+  .contact-form .form-status:empty { min-height: 0; margin-top: -.9rem; } /* no blank line under Submit until there is a message */
   .socials img { width: 32px; height: 32px; }
 }
 
@@ -607,9 +608,9 @@ html.lb-open, html.lb-open body { overflow: hidden; }
 @media (max-width: 600px) {
   .term { justify-content: flex-start; padding-top: 6vh; font-size: 18px; }
   .term-name { font-size: 2.1em; }
+  .term-pre { display: none; }
   .term-menu a { grid-template-columns: 4ch minmax(0, 1fr); }
   .term-menu .d { display: none; }
-  .term-boot p { white-space: nowrap; overflow: hidden; text-overflow: clip; }
 }
 @media (prefers-reduced-motion: reduce) {
   .crt { animation: none; } /* keep the slow roll and the cursor, drop the flicker */
