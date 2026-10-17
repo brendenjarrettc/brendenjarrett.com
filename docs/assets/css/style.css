@@ -741,3 +741,21 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
 .card a[href="going-outside-the-norm-by-scoring/"]      { --card-bar: #2f3a42; } /* INSIDE slate */
 .card a[href="how-skyrims-score-has-cast-a-cathartic/"] { --card-bar: #0f3d82; } /* Skyrim night blue */
 .card a[href] .card-text time, .card a[href] .card-text p { color: rgba(255, 255, 255, .82); }
+
+/* Landing page, minimal: a very large BJ logo, the four menu keys and ENTER, on the same phosphor terminal. */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.term-min { align-items: center; justify-content: center; gap: 4.5vh; text-align: center; }
+.term-mark {
+  width: min(62vh, 78vw); aspect-ratio: 1; flex: none; background-color: var(--phos);
+  -webkit-mask: url("../img/bj-logo-mask.png") center / contain no-repeat;
+          mask: url("../img/bj-logo-mask.png") center / contain no-repeat;
+  filter: drop-shadow(0 0 .35em rgba(141, 245, 166, .45));
+}
+.term-min .term-menu { display: flex; flex-wrap: wrap; justify-content: center; gap: .4em 2.2ch; margin: 0; }
+.term-min .term-menu a { display: inline-flex; gap: 1ch; grid-template-columns: none; }
+.term-min .term-enter { align-self: center; }
+@media (max-width: 600px) {
+  .term-min { justify-content: center; padding-top: 4vh; gap: 4vh; }
+  .term-min .term-menu { display: grid; grid-template-columns: auto auto; gap: .5em 3ch; }
+  .term-min .term-menu a { justify-content: flex-start; }
+}
