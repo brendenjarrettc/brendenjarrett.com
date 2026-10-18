@@ -11,13 +11,16 @@
   var grid = document.createElement('div');
   grid.className = 'games-grid';
   host.appendChild(grid);
-  var built = '';
+  var built = '', lastW = 0, t0 = Date.now();
 
   var ANGLE = -14; // degrees; the grid is tilted like tie stripes
   var SPEED = 22;  // px per second the covers drift to the right
 
   function build() {
-    var vw = window.innerWidth, vh = window.innerHeight;
+    // Height comes from the background box, which is sized to the tallest the screen gets (100lvh), so
+    // the address bar sliding in and out while scrolling on a phone never moves or rebuilds the covers.
+    var vw = window.innerWidth, vh = host.clientHeight || window.innerHeight;
+    lastW = vw;
     // The tilted grid must be big enough to cover the screen's corners: use the screen diagonal.
     var size = Math.ceil(Math.hypot(vw, vh)) + 200;
     grid.style.width = grid.style.height = size + 'px';
@@ -44,11 +47,17 @@
       i += n;
     }
     grid.style.setProperty('--strip-w', stripW.toFixed(2) + 'px');
-    grid.style.setProperty('--loop', (stripW / SPEED).toFixed(1) + 's');
+    var loop = stripW / SPEED;
+    grid.style.setProperty('--loop', loop.toFixed(1) + 's');
+    // Pick up the drift where it was (a rebuild only happens when the width changes, e.g. rotating a phone).
+    grid.style.setProperty('--phase', (-(((Date.now() - t0) / 1000) % loop)).toFixed(2) + 's');
     grid.innerHTML = html;
   }
 
   var t;
-  window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(build, 150); });
+  window.addEventListener('resize', function () {
+    if (window.innerWidth === lastW) return; // height-only change: the phone address bar; ignore it
+    clearTimeout(t); t = setTimeout(build, 150);
+  });
   build();
 })();

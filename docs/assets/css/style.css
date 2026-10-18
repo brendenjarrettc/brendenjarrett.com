@@ -879,3 +879,6 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
   from { background-position: var(--x) 0; }
   to   { background-position: calc(var(--x) + var(--strip-w)) 0; }
 }
+/* Phones: the background box stays the full (largest) screen height, so scrolling never resizes it. */
+.page-bg.games-bg { bottom: auto; height: 100vh; height: 100lvh; }
+.games-grid .games-row { animation-delay: var(--phase, 0s); }
