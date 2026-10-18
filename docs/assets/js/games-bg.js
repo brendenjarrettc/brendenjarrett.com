@@ -1,7 +1,8 @@
 // Articles background: the game covers in A-Z order, laid out like reading a page (left to right,
 // row after row, starting again after Z). Covers per row adapt to the screen so the full A-Z run is
 // visible; alternate rows sit half a cover over (brick layout), and because a row is not a multiple of
-// the cover count each title drifts diagonally down the page, like stripes on a tie.
+// the cover count each title drifts diagonally down the page, like stripes on a tie. The rows slide
+// slowly left to right in a seamless loop.
 (function () {
   var host = document.querySelector('.games-bg');
   if (!host) return;
@@ -13,6 +14,7 @@
   var built = '';
 
   var ANGLE = -14; // degrees; the grid is tilted like tie stripes
+  var SPEED = 22;  // px per second the covers drift to the right
 
   function build() {
     var vw = window.innerWidth, vh = window.innerHeight;
@@ -31,16 +33,18 @@
     if (key === built) return;
     built = key;
 
+    // Each row is one repeating strip of the A-Z covers. Rows slide right by exactly one full A-Z run
+    // (the strip width) and start over: the frame after the jump is identical, so the loop is seamless.
+    var stripW = cw * COUNT;
     var html = '', i = 0;
     for (var r = 0; r < rows; r++) {
       var odd = r % 2 === 1, n = odd ? cols + 1 : cols;
-      html += '<div class="games-row" style="height:' + ch.toFixed(2) + 'px;' + (odd ? 'margin-left:' + (-cw / 2).toFixed(2) + 'px' : '') + '">';
-      for (var c = 0; c < n; c++, i++) {
-        html += '<span style="width:' + cw.toFixed(2) + 'px;background-position:' + (-(i % COUNT) * cw).toFixed(2) + 'px 0"></span>';
-      }
-      html += '</div>';
+      var x = ((odd ? -cw / 2 : 0) - (i % COUNT) * cw) % stripW;
+      html += '<div class="games-row" style="height:' + ch.toFixed(2) + 'px;--x:' + x.toFixed(2) + 'px"></div>';
+      i += n;
     }
-    grid.style.setProperty('--strip-w', (cw * COUNT).toFixed(2) + 'px');
+    grid.style.setProperty('--strip-w', stripW.toFixed(2) + 'px');
+    grid.style.setProperty('--loop', (stripW / SPEED).toFixed(1) + 's');
     grid.innerHTML = html;
   }
 

@@ -865,3 +865,17 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
 }
 .back-top:hover, .back-top:focus-visible { background: #1f4fd8; border-color: #1f4fd8; outline: none; }
 @media (max-width: 760px) { .back-top { display: none; } }
+
+/* Articles background in motion: each row is one repeating A-Z strip sliding right. It moves exactly one
+   strip width per loop, so the loop point is invisible. */
+.games-grid .games-row {
+  display: block; width: 100%;
+  background: url("../img/games-strip.jpg") repeat-x;
+  background-size: var(--strip-w) 100%;
+  background-position: var(--x) 0;
+  animation: games-drift var(--loop, 200s) linear infinite;
+}
+@keyframes games-drift {
+  from { background-position: var(--x) 0; }
+  to   { background-position: calc(var(--x) + var(--strip-w)) 0; }
+}
