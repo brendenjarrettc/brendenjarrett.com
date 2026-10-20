@@ -882,3 +882,12 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
 /* Phones: the background box stays the full (largest) screen height, so scrolling never resizes it. */
 .page-bg.games-bg { bottom: auto; height: 100vh; height: 100lvh; }
 .games-grid .games-row { animation-delay: var(--phase, 0s); }
+
+/* Solid panels: About sections, the Contact form fields and the Contact intro box (no see-through). */
+.about-section { background: #0e0e0e; }
+.contact-form input, .contact-form textarea { background: #0e0e0e; }
+.contact-note {
+  padding: .7rem .9rem; background: #0e0e0e; border: 1px solid #2a2a2a; border-radius: 4px;
+  display: grid; gap: .35rem;
+}
+.contact .contact-note .intro, .contact .contact-note .intro + .intro { margin: 0; }
