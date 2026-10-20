@@ -891,3 +891,5 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
   display: grid; gap: .35rem;
 }
 .contact .contact-note .intro, .contact .contact-note .intro + .intro { margin: 0; }
+/* Contact fields use the same thin border and rounded corners as the intro box. */
+.contact-form input, .contact-form textarea { border: 1px solid #2a2a2a; border-radius: 4px; }
