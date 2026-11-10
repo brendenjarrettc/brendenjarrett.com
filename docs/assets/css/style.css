@@ -893,3 +893,101 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
 .contact .contact-note .intro, .contact .contact-note .intro + .intro { margin: 0; }
 /* Contact fields use the same thin border and rounded corners as the intro box. */
 .contact-form input, .contact-form textarea { border: 1px solid #2a2a2a; border-radius: 4px; }
+
+/* Landing: name and role under the logo, in the same rolling green scan lines. */
+.term-id { margin: 0; font-size: 1em; display: grid; gap: .25em; text-align: center; font-weight: 400; line-height: 1.1; }
+.term-id span {
+  color: transparent; background: var(--scan) 0 0 / 100% 4px; -webkit-background-clip: text; background-clip: text;
+  filter: drop-shadow(0 0 3px rgba(141, 245, 166, .45));
+}
+.term-id-name { font-size: 1.9em; letter-spacing: .14em; }
+.term-id-role { font-size: 1em; letter-spacing: .12em; }
+.js .term-min .term-id.ln span { animation: tv-roll 1.6s linear infinite; }
+.term-min { gap: 3.2vh; }
+.term-min .term-mark { width: min(46vh, 70vw); }
+@media (max-width: 600px) { .term-id-name { font-size: 1.4em; letter-spacing: .08em; } .term-id-role { font-size: .72em; letter-spacing: .05em; } }
+
+/* Music: intro line and the featured Wall Street Raider section. */
+.music-lede { max-width: 46rem; margin: -.3rem 0 1.4rem; font-size: 1rem; line-height: 1.6; color: #e8eef7; text-shadow: 0 1px 8px rgba(0, 0, 0, .9); }
+.wsr-feature {
+  margin: 1.6rem 0 2.2rem; padding: 1.3rem 1.5rem 1.4rem;
+  background: rgba(11, 17, 32, .94); border: 1px solid rgba(34, 211, 238, .35); border-radius: 4px;
+  color: #d8e6f2; line-height: 1.6;
+}
+.wsr-feature h2 { margin: 0 0 .6rem; font-size: clamp(1.3rem, 2.2vw, 1.8rem); color: #fff; }
+.wsr-feature p { margin: 0 0 .8rem; font-size: .95rem; }
+.wsr-kicker { margin: 0 0 .3rem !important; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .72rem !important; letter-spacing: .18em; text-transform: uppercase; color: #22d3ee; }
+.wsr-actions { display: flex; flex-wrap: wrap; gap: .7rem; margin: 1rem 0 0 !important; }
+.wsr-feature .wsr-link { font-size: .78rem; }
+
+/* "Work with me" panel and "Play full album" button: the landing page's phosphor green, carried site-wide. */
+.hire-cta {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 1.5rem;
+  margin: 2.5rem 0 0; padding: 1.2rem 1.4rem;
+  background: #04120a; border: 1px solid #2f6b42; border-radius: 4px; color: #d9f8e2;
+}
+.hire-cta p { margin: 0; font-size: 1.05rem; font-weight: 500; line-height: 1.45; flex: 1 1 18rem; }
+.hire-kicker { display: block; margin-bottom: .25rem; font-family: "VT323", ui-monospace, monospace; font-size: 1.05rem; font-weight: 400; letter-spacing: .08em; text-transform: uppercase; color: #8df5a6; }
+.hire-btn, .album-play {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .55rem 1.2rem;
+  font-weight: 600; font-size: .95rem; color: #03140a; text-decoration: none; white-space: nowrap;
+  background: #8df5a6; border: 1px solid #8df5a6; border-radius: 3px; transition: background-color .15s, color .15s;
+}
+.hire-btn:hover, .hire-btn:focus-visible, .album-play:hover, .album-play:focus-visible { background: #b6ffc6; outline: none; }
+.album-head { flex-wrap: wrap; }
+.album-play { margin-left: auto; font-size: .85rem; min-height: 40px; padding: .4rem 1rem; }
+.prose + .hire-cta, .article .hire-cta { margin-top: 3rem; }
+.about-page .hire-cta { width: min(100%, 46rem); margin: 1.4rem auto 0; }
+@media (max-width: 760px) {
+  .hire-cta { padding: 1rem; }
+  .hire-btn { width: 100%; }
+  .album-play { margin-left: 0; width: 100%; margin-top: .4rem; }
+}
+
+/* ---------- Readability, contrast and touch targets (Nov 2026 review) ---------- */
+/* Album pages: the menu sits on bright clouds, so lift it and mark the current page. */
+.theme-music .site-nav a { color: #e3ebf6; }
+.theme-music .site-nav a[aria-current="page"] { color: #fff; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+.theme-music .nav-logo { background-color: #e3ebf6; filter: drop-shadow(0 0 6px rgba(0, 0, 0, .8)); }
+.contact .intro { font-size: .9rem; }
+.about-list dd a { color: var(--accent); text-underline-offset: 3px; }
+.about-photo { float: right; width: min(38%, 220px); height: auto; margin: .2rem 0 .8rem 1.2rem; border-radius: 4px; filter: grayscale(1); }
+.reel-note { margin: 0 0 .6rem; padding: .5rem .8rem; font-size: .85rem; color: #fff; background: rgba(4, 12, 28, .85); border-left: 3px solid #8df5a6; }
+.album-pager a { min-height: 44px; display: inline-flex; align-items: center; }
+
+@media (max-width: 760px) {
+  /* Menu: 44px tap height, and a solid bar behind it on album pages. */
+  .site-nav a { padding: 9px 0; }
+  .nav-logo { width: 44px; height: 44px; }
+  .theme-music .site-nav { background: rgba(4, 12, 28, .86); }
+  /* Text no smaller than ~12px; body text 15px+. */
+  .site-footer, .theme-contact .site-footer { font-size: .85rem; }
+  .album-card-title { font-size: .85rem; }
+  .album-card time { font-size: .8rem; }
+  .contact .intro { font-size: .95rem; }
+  .about-list dt, .about-list dd, .about-text p { font-size: 1rem; }
+  .about-list-inspired dd { font-size: .92rem; }
+  .about-section h2 { font-size: .8rem; }
+  .about-photo { width: 42%; margin-left: .9rem; }
+  /* Bigger touch targets. */
+  .about-drop > summary { min-height: 44px; }
+  .about-src { padding: .45rem 0; }
+  .socials { gap: 16px; }
+  .socials img { width: 40px; height: 40px; }
+  .album-back, .back { display: inline-block; padding: .5rem 0; }
+  /* Contact form: 16px text so iPhones don't zoom in, and taller fields. */
+  .contact-form input, .contact-form textarea { font-size: 16px; padding: .55em .9em; }
+  .contact-form input { min-height: 46px; }
+  .contact-form button { min-height: 48px; font-size: 1.2rem; }
+  /* Room below the last line so the LISTEN button never sits on top of text. */
+  body.has-listen { padding-bottom: 64px; }
+}
+@media (max-width: 760px) {
+  .term-min .term-menu a { padding: .6em .5ch; }
+  .about-src { font-size: .85rem; padding: .7rem 0; }
+  .wsr-kicker { font-size: .8rem !important; }
+  .wsr-feature .wsr-link { font-size: .85rem; min-height: 44px; display: inline-flex; align-items: center; }
+  .card time { font-size: .85rem; }
+  .album-back, .back { padding: .7rem 0; }
+  .bj-close { width: 44px; height: 44px; }
+}

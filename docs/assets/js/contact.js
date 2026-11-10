@@ -16,6 +16,7 @@
         if (!r.ok) throw new Error();
         form.reset();
         status.textContent = 'Thanks! Your message was sent.';
+        if (typeof window.gtag === 'function') window.gtag('event', 'generate_lead', { form: 'contact' });
       })
       .catch(function () {
         status.textContent = 'Sorry, something went wrong. Please try again.';

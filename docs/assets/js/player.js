@@ -33,8 +33,27 @@
   if (framed) {
     document.addEventListener('click', function (e) {
       var a = e.target.closest && e.target.closest('a[href]');
-      if (a && a.origin !== location.origin && !a.target) { a.target = '_blank'; a.rel = 'noopener'; }
+      if (!a) return;
+      // "Play full album" while the bar is already open: switch the bar to this album instead of reloading.
+      if (a.origin === location.origin && a.pathname.indexOf('/listen/') === 0) {
+        e.preventDefault();
+        try {
+          var sel = window.parent.document.getElementById('bj-album');
+          sel.value = albumFor(location.pathname).id;
+          sel.dispatchEvent(new Event('change'));
+        } catch (err) {}
+        return;
+      }
+      if (a.origin !== location.origin && !a.target) { a.target = '_blank'; a.rel = 'noopener'; }
     }, true);
+    // Two players: say so above the reel, since one cannot pause the other.
+    var reel = document.querySelector('.reel');
+    if (reel) {
+      var note = document.createElement('p');
+      note.className = 'reel-note';
+      note.textContent = 'Full albums are playing in the bar below. Pause it before previewing tracks here.';
+      reel.parentNode.insertBefore(note, reel);
+    }
     return;
   }
 
@@ -85,6 +104,7 @@
   btn.setAttribute('aria-label', 'Listen to full albums while you browse');
   btn.innerHTML = NOTE + '<span>LISTEN</span>';
   btn.addEventListener('click', function () {
+    if (window.bjEvent) window.bjEvent('listen_open', { from_page: location.pathname });
     var p = location.pathname + location.search + location.hash;
     location.href = '/listen/?p=' + encodeURIComponent(p) + '&a=' + albumFor(location.pathname).id + '&y=' + Math.round(window.scrollY);
   });
