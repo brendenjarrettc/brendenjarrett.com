@@ -27,3 +27,15 @@
     }, 0);
   });
 })();
+
+// "Work with me" panel: a drop-down on phones (starts closed), always open on desktop.
+(function () {
+  var mq = window.matchMedia('(max-width: 760px)');
+  var panels = document.querySelectorAll('details.hire-cta');
+  function sync() { panels.forEach(function (d) { d.open = !mq.matches; }); }
+  panels.forEach(function (d) {
+    d.querySelector('summary').addEventListener('click', function (e) { if (!mq.matches) e.preventDefault(); });
+  });
+  sync();
+  if (mq.addEventListener) mq.addEventListener('change', sync);
+})();
