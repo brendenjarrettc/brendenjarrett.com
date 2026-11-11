@@ -1013,3 +1013,7 @@ details.hire-cta { display: block; }
   .hire-cta > summary:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
   .hire-body { margin-top: .9rem; }
 }
+/* "For game developers" label: same type as the About page drop-down headings. */
+.hire-kicker { font-family: var(--font); font-size: .72rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+@media (max-width: 760px) { .hire-kicker { font-size: .8rem; } }
+.hire-cta .about-arrow::before { transition: none; } /* panel starts open and closes on phones at load: no flip animation */
