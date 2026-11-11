@@ -991,3 +991,10 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
   .album-back, .back { padding: .7rem 0; }
   .bj-close { width: 44px; height: 44px; }
 }
+/* Phones: the "Work with me" panel in plain white instead of green. */
+@media (max-width: 760px) {
+  .hire-cta { background: #0e0e0e; border-color: rgba(255, 255, 255, .35); color: #fff; }
+  .hire-kicker { color: #fff; }
+  .hire-btn { background: #fff; border-color: #fff; color: #111; }
+  .hire-btn:hover, .hire-btn:focus-visible { background: #e6e6e6; }
+}
