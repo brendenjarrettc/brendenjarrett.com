@@ -1119,3 +1119,9 @@ details.hire-cta { display: block; }
 .vid-heading { margin: 2.2rem 0 1rem; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; letter-spacing: -.01em; text-transform: none; color: #fff; text-shadow: 0 2px 12px rgba(0, 0, 0, .8); }
 .theme-videos .articles-head { margin-bottom: 0; }
 .theme-videos main > h1 + section .vid-heading { margin-top: .4rem; }
+/* About and Contact: a visible page title in the same bold white style as "Music Videos" and "Articles". */
+.page-title { margin: 1.2rem auto 1rem; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; line-height: 1.15; letter-spacing: -.01em; color: #fff; text-shadow: 0 2px 12px rgba(0, 0, 0, .8); }
+.about-page .page-title { width: min(100%, 46rem); }
+.contact-page .page-title { width: min(100%, max(30rem, 42vw)); flex: none; }
+@media (min-width: 761px) and (min-height: 520px) { .theme-contact .contact-page .page-title { margin: .6rem auto .2rem; } }
+@media (max-width: 760px) { .page-title { margin: .6rem auto .8rem; } }
