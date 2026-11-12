@@ -725,7 +725,7 @@ html:has(.bj-shell), .bj-shell { height: 100%; overflow: hidden; background: #00
 /* Release cards: each title bar takes a colour from its album cover. */
 .album-card-text { background: var(--card-bar, #14243d); }
 .album-card a[href="/music/quailentime/"]                   { --card-bar: #31747e; } /* teal texture */
-.album-card a[href="/music/grandpas-clothes-ep/"]           { --card-bar: #293573; } /* blue fabric */
+.album-card a[href="/music/grandpas-clothes-ep/"]           { --card-bar: #b80b26; } /* crimson, from the top-right of the art */
 .album-card a[href="/music/acoldaus/"]                      { --card-bar: #1d6ca3; } /* moonlit blue */
 .album-card a[href="/music/cleft/"]                         { --card-bar: #625146; } /* warm city-light umber */
 .album-card a[href="/music/effervescent/"]                  { --card-bar: #3d3e99; } /* violet sky */
@@ -1092,6 +1092,3 @@ details.hire-cta { display: block; }
   .vid-grid, .vid-grid-shorts { gap: 1.6rem; }
   .vid-grid-shorts .vid { width: min(100%, calc((100svh - 150px) * 9 / 16)); }
 }
-/* Grandpa's Clothes EP: the title and date sit on the same crimson panel. */
-.album-grandpas-clothes-ep .album-head { align-items: center; padding: .9rem 1.2rem; background: #b80b26; border: 1px solid #e0294a; }
-.album-grandpas-clothes-ep .album-head h1, .album-grandpas-clothes-ep .album-head time { text-shadow: none; }
