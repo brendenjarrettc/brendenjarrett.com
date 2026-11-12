@@ -1104,10 +1104,10 @@ details.hire-cta { display: block; }
 .album-page .hire-cta .hire-btn { color: color-mix(in srgb, var(--album-color, #111) 80%, #000); }
 
 /* Album pages: the cloud background is replaced by a darkened, softened section of that album's own art. */
-.album-bg-quailentime .page-bg { background-image: url("../img/music/bg/quailentime.jpg"); }
-.album-bg-grandpas-clothes-ep .page-bg { background-image: url("../img/music/bg/grandpas-clothes-ep.jpg"); }
-.album-bg-acoldaus .page-bg { background-image: url("../img/music/bg/acoldaus.jpg"); }
-.album-bg-cleft .page-bg { background-image: url("../img/music/bg/cleft.jpg"); }
-.album-bg-effervescent .page-bg { background-image: url("../img/music/bg/effervescent.jpg"); }
-.album-bg-tomorrow-is-only-a-dream-away .page-bg { background-image: url("../img/music/bg/tomorrow-is-only-a-dream-away.jpg"); }
+.album-bg-quailentime .page-bg { background-image: url("../img/music/bg/quailentime.jpg?v=2"); }
+.album-bg-grandpas-clothes-ep .page-bg { background-image: url("../img/music/bg/grandpas-clothes-ep.jpg?v=2"); }
+.album-bg-acoldaus .page-bg { background-image: url("../img/music/bg/acoldaus.jpg?v=2"); }
+.album-bg-cleft .page-bg { background-image: url("../img/music/bg/cleft.jpg?v=2"); }
+.album-bg-effervescent .page-bg { background-image: url("../img/music/bg/effervescent.jpg?v=2"); }
+.album-bg-tomorrow-is-only-a-dream-away .page-bg { background-image: url("../img/music/bg/tomorrow-is-only-a-dream-away.jpg?v=2"); }
 [class*="album-bg-"] { --bg: #07090d; background-color: #07090d; }
