@@ -1075,3 +1075,20 @@ details.hire-cta { display: block; }
   .vid-grid-shorts .vid { width: min(100%, calc((100svh - 150px) * 9 / 16)); margin: 0 auto; }
   .vid-short .vid-title { font-size: .95rem; }
 }
+
+/* Grandpa's Clothes EP: the hire panel is a solid crimson swatch taken from the top-right of the album art. */
+.album-grandpas-clothes-ep .hire-cta { background: #b80b26; border-color: #e0294a; }
+.album-grandpas-clothes-ep .hire-cta > summary .about-arrow { border-color: rgba(255, 255, 255, .6); }
+.album-grandpas-clothes-ep .hire-cta .hire-btn { color: #8e0a1e; }
+
+/* Videos and Shorts at every screen size: one per row, each as big as the screen allows as you scroll,
+   so they can be watched here at a real size instead of opening YouTube. */
+.vid-grid, .vid-grid-shorts { grid-template-columns: minmax(0, 1fr); gap: 2.4rem; }
+.vid-grid .vid { width: min(100%, calc((100svh - 130px) * 16 / 9)); margin: 0 auto; }
+.vid-grid-shorts .vid { width: min(100%, calc((100svh - 130px) * 9 / 16)); margin: 0 auto; }
+.vid-title { font-size: 1rem; }
+.vid-short .vid-title { font-size: .95rem; }
+@media (max-width: 760px) {
+  .vid-grid, .vid-grid-shorts { gap: 1.6rem; }
+  .vid-grid-shorts .vid { width: min(100%, calc((100svh - 150px) * 9 / 16)); }
+}
