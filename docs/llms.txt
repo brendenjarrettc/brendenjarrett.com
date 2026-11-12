@@ -14,7 +14,7 @@
 
 ## Music
 
-- [Music](https://brendenjarrett.com/music/): all releases, with track previews. A LISTEN button on every page opens a Bandcamp player, so full albums keep playing while you browse the site.
+- [Music](https://brendenjarrett.com/music/): all releases, with track previews. A LISTEN button on every page opens a Bandcamp player, so music keeps playing while you browse the site.
 - Wall Street Raider (W$R): original game soundtrack in production (https://www.wallstreetraider.com/).
 - [Quailentime](https://brendenjarrett.com/music/quailentime/) (album, 2026): synthesizers, piano, drum machines and guitars; loud and vivacious, then soft and ambient.
 - [Grandpa's Clothes EP](https://brendenjarrett.com/music/grandpas-clothes-ep/) (EP, 2025): acoustic instruments coupled with synthesizers.

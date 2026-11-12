@@ -1,4 +1,4 @@
-// Site-wide music player: full albums from Bandcamp that keep playing while you move around the site.
+// Site-wide music player: music from Bandcamp that keep playing while you move around the site.
 //
 // On a normal page this adds a LISTEN button. Clicking it opens /listen/, a small shell page with the
 // Bandcamp player in a bar along the bottom and the site shown in a frame above it. Moving between pages
@@ -34,7 +34,7 @@
     document.addEventListener('click', function (e) {
       var a = e.target.closest && e.target.closest('a[href]');
       if (!a) return;
-      // "Play full album" while the bar is already open: switch the bar to this album instead of reloading.
+      // "Listen" while the bar is already open: switch the bar to this album instead of reloading.
       if (a.origin === location.origin && a.pathname.indexOf('/listen/') === 0) {
         e.preventDefault();
         try {
@@ -51,7 +51,7 @@
     if (reel) {
       var note = document.createElement('p');
       note.className = 'reel-note';
-      note.textContent = 'Full albums are playing in the bar below. Pause it before previewing tracks here.';
+      note.textContent = 'Music is playing in the bar below. Pause it before previewing tracks here.';
       reel.parentNode.insertBefore(note, reel);
     }
     return;
@@ -101,7 +101,7 @@
   var btn = document.createElement('button');
   btn.type = 'button';
   btn.className = 'bj-listen';
-  btn.setAttribute('aria-label', 'Listen to full albums while you browse');
+  btn.setAttribute('aria-label', 'Listen to music while you browse');
   btn.innerHTML = NOTE + '<span>LISTEN</span>';
   btn.addEventListener('click', function () {
     if (window.bjEvent) window.bjEvent('listen_open', { from_page: location.pathname });

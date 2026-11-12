@@ -1092,3 +1092,6 @@ details.hire-cta { display: block; }
   .vid-grid, .vid-grid-shorts { gap: 1.6rem; }
   .vid-grid-shorts .vid { width: min(100%, calc((100svh - 150px) * 9 / 16)); }
 }
+/* Grandpa's Clothes EP: the title and date sit on the same crimson panel. */
+.album-grandpas-clothes-ep .album-head { align-items: center; padding: .9rem 1.2rem; background: #b80b26; border: 1px solid #e0294a; }
+.album-grandpas-clothes-ep .album-head h1, .album-grandpas-clothes-ep .album-head time { text-shadow: none; }
