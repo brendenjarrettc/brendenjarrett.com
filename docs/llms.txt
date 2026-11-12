@@ -24,6 +24,11 @@
 - [Tomorrow Is Only a Dream Away](https://brendenjarrett.com/music/tomorrow-is-only-a-dream-away/) (single, 2018).
 - Streaming: [Spotify](https://open.spotify.com/artist/0vUuyq2k7Zz5etqPfTC1cY), [Apple Music](https://music.apple.com/us/artist/brenden-jarrett/1651731935), [Bandcamp](https://brendenjarrett.bandcamp.com/), [YouTube Music](https://music.youtube.com/channel/UCkjo_ITGxskD-G90v71qWeg).
 
+
+## Videos
+
+- [Videos](https://brendenjarrett.com/videos/): a sound design portfolio, music videos (Olympus Mons, The Martian), full-album videos (Effervescent, Cleft, ACOLDAUS) and dozens of YouTube Shorts of synth, ambient and sound design pieces, all playable on the page.
+- [YouTube channel](https://www.youtube.com/@brendenjarrett)
 ## Writing on game audio
 
 - [Balatro's Polyrhythmic & Polychrome Score](https://brendenjarrett.com/articles/balatros-polyrhythmic-and-polychrome/): LouisF's score for Balatro.
