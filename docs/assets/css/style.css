@@ -1115,3 +1115,7 @@ details.hire-cta { display: block; }
 .album-page .rel-text { background: color-mix(in srgb, var(--album-color, #14243d) 38%, #050505); }
 .album-page .album-pager a { background: color-mix(in srgb, var(--album-color, #14243d) 45%, #050505); }
 .album-page .album-pager a:hover, .album-page .album-pager a:focus-visible { box-shadow: 0 0 0 2px var(--album-color, #1a8cff); }
+/* Videos page: the section headings ("Music Videos", "Shorts") are the big bold white titles; the page h1 is for screen readers only. */
+.vid-heading { margin: 2.2rem 0 1rem; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; letter-spacing: -.01em; text-transform: none; color: #fff; text-shadow: 0 2px 12px rgba(0, 0, 0, .8); }
+.theme-videos .articles-head { margin-bottom: 0; }
+.theme-videos .articles-head + section .vid-heading { margin-top: 1rem; }
