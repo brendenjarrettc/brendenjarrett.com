@@ -1118,4 +1118,4 @@ details.hire-cta { display: block; }
 /* Videos page: the section headings ("Music Videos", "Shorts") are the big bold white titles; the page h1 is for screen readers only. */
 .vid-heading { margin: 2.2rem 0 1rem; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; letter-spacing: -.01em; text-transform: none; color: #fff; text-shadow: 0 2px 12px rgba(0, 0, 0, .8); }
 .theme-videos .articles-head { margin-bottom: 0; }
-.theme-videos .articles-head + section .vid-heading { margin-top: 1rem; }
+.theme-videos main > h1 + section .vid-heading { margin-top: .4rem; }
