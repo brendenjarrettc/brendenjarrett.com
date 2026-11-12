@@ -1069,3 +1069,9 @@ details.hire-cta { display: block; }
 .music-page .music-drop { width: 100%; margin: 2.5rem 0 0; }
 .music-drop-note { margin: 0 0 1rem; font-size: .9rem; color: #cfcfcf; }
 .music-drop .vid-title { color: #e9ecf1; }
+/* Phones: Shorts one at a time, each filling the screen as you scroll (Videos page and Music marketing). */
+@media (max-width: 760px) {
+  .vid-grid-shorts { grid-template-columns: minmax(0, 1fr); gap: 1.6rem; }
+  .vid-grid-shorts .vid { width: min(100%, calc((100svh - 150px) * 9 / 16)); margin: 0 auto; }
+  .vid-short .vid-title { font-size: .95rem; }
+}
