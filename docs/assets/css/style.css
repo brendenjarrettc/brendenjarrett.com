@@ -1076,10 +1076,6 @@ details.hire-cta { display: block; }
   .vid-short .vid-title { font-size: .95rem; }
 }
 
-/* Grandpa's Clothes EP: the hire panel is a solid crimson swatch taken from the top-right of the album art. */
-.album-grandpas-clothes-ep .hire-cta { background: #b80b26; border-color: #e0294a; }
-.album-grandpas-clothes-ep .hire-cta > summary .about-arrow { border-color: rgba(255, 255, 255, .6); }
-.album-grandpas-clothes-ep .hire-cta .hire-btn { color: #8e0a1e; }
 
 /* Videos and Shorts at every screen size: one per row, each as big as the screen allows as you scroll,
    so they can be watched here at a real size instead of opening YouTube. */
@@ -1092,3 +1088,17 @@ details.hire-cta { display: block; }
   .vid-grid, .vid-grid-shorts { gap: 1.6rem; }
   .vid-grid-shorts .vid { width: min(100%, calc((100svh - 150px) * 9 / 16)); }
 }
+
+/* Album pages: the Listen button and the "For game developers" panel take that album's colour,
+   the same colour as its title bar on the Music page. */
+.album-quailentime                   { --album-color: #31747e; }
+.album-grandpas-clothes-ep           { --album-color: #b80b26; }
+.album-acoldaus                      { --album-color: #1d6ca3; }
+.album-cleft                         { --album-color: #625146; }
+.album-effervescent                  { --album-color: #3d3e99; }
+.album-tomorrow-is-only-a-dream-away { --album-color: #317f6e; }
+.album-page .album-play { color: #fff; background: var(--album-color, #14243d); border-color: color-mix(in srgb, var(--album-color, #14243d) 70%, #fff); }
+.album-page .album-play:hover, .album-page .album-play:focus-visible { background: color-mix(in srgb, var(--album-color, #14243d) 80%, #fff); }
+.album-page .hire-cta { background: var(--album-color, #0e0e0e); border-color: color-mix(in srgb, var(--album-color, #0e0e0e) 70%, #fff); }
+.album-page .hire-cta > summary .about-arrow { border-color: rgba(255, 255, 255, .6); }
+.album-page .hire-cta .hire-btn { color: color-mix(in srgb, var(--album-color, #111) 80%, #000); }
