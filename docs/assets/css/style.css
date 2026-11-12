@@ -1064,3 +1064,8 @@ details.hire-cta { display: block; }
 @media (max-width: 359px) { .nav-logo { width: 34px; height: 34px; } .site-nav { padding-left: 12px; padding-right: 12px; } .site-nav ul { margin-left: 8px; column-gap: 6px; } }
 @media (max-width: 760px) { .vid-grid-shorts { grid-template-columns: repeat(2, minmax(0, 1fr)); } } /* columns shrink to the screen, not the thumbnail size */
 .vid-title { overflow-wrap: anywhere; } /* long file-name titles (a.new.foe...wav) wrap instead of widening the page */
+
+/* Music page: "Music marketing" drop-down (same look as the About page drop-downs) holding release Shorts. */
+.music-page .music-drop { width: 100%; margin: 2.5rem 0 0; }
+.music-drop-note { margin: 0 0 1rem; font-size: .9rem; color: #cfcfcf; }
+.music-drop .vid-title { color: #e9ecf1; }
