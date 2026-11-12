@@ -27,7 +27,7 @@
 
 ## Videos
 
-- [Videos](https://brendenjarrett.com/videos/): a sound design portfolio, music videos (Olympus Mons, The Martian), full-album videos (Effervescent, Cleft, ACOLDAUS) and dozens of YouTube Shorts of synth, ambient and sound design pieces, all playable on the page.
+- [Videos](https://brendenjarrett.com/videos/): music videos (Olympus Mons, The Martian), full-album videos (Effervescent, Cleft, ACOLDAUS) and dozens of YouTube Shorts of synth, ambient and sound design pieces, all playable on the page.
 - [YouTube channel](https://www.youtube.com/@brendenjarrett)
 ## Writing on game audio
 
