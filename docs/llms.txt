@@ -1,6 +1,6 @@
 # Brenden Jarrett
 
-> Brenden Jarrett is a game audio composer and sound designer who has been making music since 2017. He writes ambient electronic, IDM and instrumental electronic music, and composes soundtracks and designs sound for video games and film. He is open to scoring and sound design work on indie and studio game projects.
+> Brenden Jarrett is a game audio composer and sound designer (a self-described synth architect) who has been making music since 2017. He writes ambient electronic, IDM and instrumental electronic music, and composes soundtracks and designs sound for video games and film. He is open to scoring and sound design work on indie and studio game projects.
 
 ## Sound and influences
 
@@ -14,7 +14,7 @@
 
 ## Music
 
-- [Music](https://brendenjarrett.com/music/): all releases, with track previews. A LISTEN button on every page opens a Bandcamp player, so music keeps playing while you browse the site.
+- [Music](https://brendenjarrett.com/music/): all releases, with track previews. A "Music marketing" section holds the release Shorts for Quailentime (including Olympus Mons), Grandpa's Clothes EP, The Martian, Strawberry and Effervescent. A LISTEN button on every page opens a Bandcamp player, so music keeps playing while you browse the site.
 - Wall Street Raider (W$R): original game soundtrack in production (https://www.wallstreetraider.com/).
 - [Quailentime](https://brendenjarrett.com/music/quailentime/) (album, 2026): synthesizers, piano, drum machines and guitars; loud and vivacious, then soft and ambient.
 - [Grandpa's Clothes EP](https://brendenjarrett.com/music/grandpas-clothes-ep/) (EP, 2025): acoustic instruments coupled with synthesizers.
@@ -29,6 +29,7 @@
 
 - [Videos](https://brendenjarrett.com/videos/): music videos (Olympus Mons, The Martian) and dozens of YouTube Shorts of synth, ambient and sound design pieces, all playable on the page.
 - [YouTube channel](https://www.youtube.com/@brendenjarrett)
+
 ## Writing on game audio
 
 - [Balatro's Polyrhythmic & Polychrome Score](https://brendenjarrett.com/articles/balatros-polyrhythmic-and-polychrome/): LouisF's score for Balatro.
