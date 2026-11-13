@@ -22,7 +22,7 @@
   <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/assets/css/style.css?v=20261111v">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20261111x">
 </head>
 <body class="theme-enter">
   <main class="notfound">
@@ -30,9 +30,9 @@
     <p><a href="/" style="color:inherit">RETURN TO TERMINAL</a></p>
   </main>
   <script>
-    // Old Substack-style article links (/p/slug) -> /articles/slug/
-    var m = location.pathname.match(/^\/p\/([a-z0-9-]+)/);
-    if (m) location.replace('/articles/' + m[1] + '/');
+    // Old article links (/p/slug): the three real articles have their own forwarding pages in /p/.
+    // Anything else under /p/ or /articles/ that no longer exists goes to the articles list.
+    if (/^\/(p|articles)\/./.test(location.pathname)) location.replace('/articles/');
   </script>
   <script src="/assets/js/lightbox.js" defer></script>
 </body>
