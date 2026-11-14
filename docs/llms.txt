@@ -48,4 +48,5 @@
 - Games: [Backloggd](https://backloggd.com/u/threeofharts/)
 - Films: [Letterboxd](https://letterboxd.com/brendenjarrett/)
 - Music: [Musicboard](https://musicboard.app/brendenjarrett)
+- Databases: [MusicBrainz](https://musicbrainz.org/artist/db995755-ca21-431b-a4b4-9b5497b04f2a), [Wikidata](https://www.wikidata.org/wiki/Q142149748)
 - Social: [YouTube](https://www.youtube.com/@brendenjarrett), [Instagram](https://www.instagram.com/thebrendenjarrett/), [LinkedIn](https://www.linkedin.com/in/brenden-j-9213632ab/), [SoundCloud](https://soundcloud.com/brendenjarrett)
