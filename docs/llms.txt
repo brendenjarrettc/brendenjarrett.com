@@ -32,6 +32,8 @@
 
 ## Writing on game audio
 
+- RSS feed for the articles: https://brendenjarrett.com/feed.xml
+
 - [Balatro's Polyrhythmic & Polychrome Score](https://brendenjarrett.com/articles/balatros-polyrhythmic-and-polychrome/): LouisF's score for Balatro.
 - [Going Outside the Norm by Scoring INSIDE a Real Human Skull](https://brendenjarrett.com/articles/going-outside-the-norm-by-scoring/): Martin Stig Andersen's sound for Playdead's INSIDE.
 - [Skyrim Helps 903 of Us Sleep](https://brendenjarrett.com/articles/how-skyrims-score-has-cast-a-cathartic/): Jeremy Soule's score for The Elder Scrolls V: Skyrim.
@@ -46,4 +48,4 @@
 - Games: [Backloggd](https://backloggd.com/u/threeofharts/)
 - Films: [Letterboxd](https://letterboxd.com/brendenjarrett/)
 - Music: [Musicboard](https://musicboard.app/brendenjarrett)
-- Social: [YouTube](https://www.youtube.com/@brendenjarrett), [Instagram](https://www.instagram.com/thebrendenjarrett/), [LinkedIn](https://www.linkedin.com/in/brenden-j-9213632ab/)
+- Social: [YouTube](https://www.youtube.com/@brendenjarrett), [Instagram](https://www.instagram.com/thebrendenjarrett/), [LinkedIn](https://www.linkedin.com/in/brenden-j-9213632ab/), [SoundCloud](https://soundcloud.com/brendenjarrett)

@@ -1133,3 +1133,22 @@ details.hire-cta { display: block; }
 .term-min { justify-content: safe center; }
 @media (max-width: 600px) { .term-min { justify-content: safe center; } }
 .term-min .term-mark { width: min(40vh, 70vw); } /* a little smaller so the introduction fits on one screen */
+
+/* Contact: the title, portrait and form still fill one screen; "What I do" and the brief notes scroll in below it. */
+.contact-detail { width: min(100%, max(30rem, 42vw)); margin: 2.5rem auto 0; }
+.contact-detail h2 { margin: 1.6rem 0 .5rem; font-size: .72rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #9aa3b2; }
+.contact-detail h2:first-child { margin-top: 0; }
+.contact-list { margin: 0; padding-left: 1.15rem; display: grid; gap: .45rem; font-size: .95rem; line-height: 1.5; }
+.contact-list strong { font-weight: 600; color: #fff; }
+.contact-tools { margin: .7rem 0 0; font-size: .88rem; line-height: 1.5; color: #b9bfc7; }
+.contact-tools a { color: var(--accent); }
+@media (min-width: 761px) and (min-height: 520px) {
+  /* The one-screen rules move from the page to the hero, so anything after it simply scrolls. */
+  .theme-contact .contact-page { height: auto; min-height: 0; display: block; padding: 0 0 5rem; overflow: visible; overflow-x: clip; }
+  .theme-contact .contact-hero {
+    position: relative; height: 100vh; height: 100dvh;
+    display: flex; flex-direction: column; padding: .9rem var(--gutter) 2.8rem; overflow: clip;
+  }
+  .theme-contact .contact-detail { margin-top: 1rem; }
+}
+@media (max-width: 760px) { .contact-detail { margin-top: 1.8rem; } }

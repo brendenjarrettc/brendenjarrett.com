@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Brenden Jarrett - Articles on game audio</title>
+    <link>https://brendenjarrett.com/articles/</link>
+    <description>Articles on game audio and video game soundtracks by composer and sound designer Brenden Jarrett.</description>
+    <language>en-us</language>
+    <copyright>Brenden Jarrett</copyright>
+    <lastBuildDate>Tue, 15 Jul 2025 12:00:00 +0000</lastBuildDate>
+    <atom:link href="https://brendenjarrett.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://brendenjarrett.com/assets/img/share-card.png</url>
+      <title>Brenden Jarrett - Articles on game audio</title>
+      <link>https://brendenjarrett.com/articles/</link>
+    </image>
+    <item>
+      <title>Balatro&#39;s Polyrhythmic &amp; Polychrome Score</title>
+      <link>https://brendenjarrett.com/articles/balatros-polyrhythmic-and-polychrome/</link>
+      <guid isPermaLink="true">https://brendenjarrett.com/articles/balatros-polyrhythmic-and-polychrome/</guid>
+      <pubDate>Tue, 15 Jul 2025 12:00:00 +0000</pubDate>
+      <description>A breakdown of LouisF&#39;s score for Balatro: the polyrhythms behind the main theme, the shop, Arcana, Celestial and boss tracks, plus the composer&#39;s Reddit AMA.</description>
+      <dc:creator>Brenden Jarrett</dc:creator>
+    </item>
+    <item>
+      <title>Going Outside the Norm by Scoring INSIDE a Real Human Skull 💀</title>
+      <link>https://brendenjarrett.com/articles/going-outside-the-norm-by-scoring/</link>
+      <guid isPermaLink="true">https://brendenjarrett.com/articles/going-outside-the-norm-by-scoring/</guid>
+      <pubDate>Tue, 27 May 2025 12:00:00 +0000</pubDate>
+      <description>How Martin Stig Andersen scored Playdead&#39;s INSIDE by playing synthesizers through a real human skull, and why bone-conducted sound fits the game&#39;s dark world.</description>
+      <dc:creator>Brenden Jarrett</dc:creator>
+      <enclosure url="https://brendenjarrett.com/articles/images/c8f2add5-286f-410b-8dda-2301cbe920d1_800x400.jpg" type="image/jpeg" length="0"/>
+    </item>
+    <item>
+      <title>Skyrim Helps 903 of Us Sleep: How Its Score Cast a Cathartic Spell on Millions</title>
+      <link>https://brendenjarrett.com/articles/how-skyrims-score-has-cast-a-cathartic/</link>
+      <guid isPermaLink="true">https://brendenjarrett.com/articles/how-skyrims-score-has-cast-a-cathartic/</guid>
+      <pubDate>Tue, 13 May 2025 12:00:00 +0000</pubDate>
+      <description>Why Jeremy Soule&#39;s Skyrim score still comforts millions: a data scrape of 13,147 YouTube comments on Skyrim night-music videos, and what they say about sleep.</description>
+      <dc:creator>Brenden Jarrett</dc:creator>
+      <enclosure url="https://brendenjarrett.com/articles/images/fc8dd17e-1125-49b9-95ab-31c03750b07b_650x625.jpg" type="image/jpeg" length="0"/>
+    </item>
+  </channel>
+</rss>
